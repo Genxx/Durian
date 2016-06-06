@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/class1" android:textColor="@color/main_color" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注册" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/tv_back" android:background="@null" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/land_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/class2" android:textColor="@color/main_color" android:id="@id/bt_next" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下一步" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#ffd5d5d5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <EditText android:layout_width="0.0dip" android:layout_height="0.0dip">
+            <requestFocus />
+        </EditText>
+        <EditText android:textSize="@dimen/class2" android:textColor="#ff555555" android:textColorHint="#ffc4c4c4" android:gravity="center" android:id="@id/et_phone" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="46.0dip" android:hint="电话号码" android:ems="10" android:numeric="integer" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <View android:background="#fffe7777" android:layout_width="wrap_content" android:layout_height="1.0px" android:layout_marginLeft="30.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="30.0dip" android:layout_below="@id/et_phone" android:layout_centerHorizontal="true" />
+        <EditText android:textSize="@dimen/class2" android:textColor="#ff555555" android:textColorHint="#ffc4c4c4" android:gravity="center" android:id="@id/et_pass" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:hint="用户密码(不少于6位)" android:ems="10" android:password="true" android:layout_below="@id/et_phone" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/class4" android:textColor="#ffff7777" android:id="@id/tv_find_pass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="点击“下一步”即意味着你已经阅读并同意" android:layout_below="@id/et_pass" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/class4" android:textColor="#ffff7777" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="和" android:layout_below="@id/tv_find_pass" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/class4" android:textColor="#ffff7777" android:id="@id/tv_user_portal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户协议" android:layout_toLeftOf="@id/textView2" android:layout_alignBottom="@id/textView2" />
+        <TextView android:textSize="@dimen/class4" android:textColor="#ffff7777" android:id="@id/tv_user_privacy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="隐私政策" android:layout_toRightOf="@id/textView2" android:layout_alignBottom="@id/textView2" />
+    </RelativeLayout>
+</LinearLayout>
