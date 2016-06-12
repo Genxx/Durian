@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.haomee.view.CircleImageView android:id="@id/user_img" android:background="@drawable/sex_female" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/item_icon" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:border_width="3.0dip" app:border_color="@color/light" />
+</RelativeLayout>

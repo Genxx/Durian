@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.haomee.liulian">
+    <RelativeLayout android:id="@id/rl_lookall_root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.haomee.view.RoundCornerImageView android:id="@id/iv_lookall_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-5.0dip" android:src="@drawable/item_default" android:scaleType="centerInside" android:layout_above="@id/ll_item_filter_name" app:radius="5.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_item_filter_bottom" android:background="@drawable/roundcorner_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="2.0dip" android:text="历史重合度" />
+                <TextView android:textSize="34.0sp" android:textColor="#ffffffff" android:id="@id/tv_lookall_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="56%" />
+            </LinearLayout>
+            <View android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="2.0dip" android:text="今日合拍度" />
+                <TextView android:textSize="34.0sp" android:textColor="#ffffffff" android:id="@id/tv_lookall_today" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="56%" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_item_filter_name" android:background="#ffffb812" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:layout_above="@id/ll_item_filter_bottom">
+            <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_lookall_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/tv_lookall_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_lookall_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_lookall_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading_icon_wind_red" android:layout_centerInParent="true" />
+        <TextView android:textSize="30.0sp" android:textColor="@android:color/darker_gray" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_above="@id/img_loading" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/title" android:background="@color/activity_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/bt_back" android:padding="@dimen/top_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/land_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/class1" android:textColor="@color/main_color" android:ellipsize="end" android:gravity="center" android:id="@id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="问日一题" android:singleLine="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:background="#ffd5d5d5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <WebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

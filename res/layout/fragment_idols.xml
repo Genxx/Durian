@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:listViewAttr="http://schemas.android.com/apk/res/com.haomee.liulian">
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/layout_blank_tip" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/list_idols" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:divider="@color/transparent" android:dividerHeight="0.0dip" listViewAttr:isDropDownStyle="true" listViewAttr:isOnBottomStyle="true" listViewAttr:isAutoLoadOnBottom="true" />
+</FrameLayout>

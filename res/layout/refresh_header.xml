@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pull_to_refresh_header" android:background="@drawable/renovate_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/pull_to_refresh_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@anim/pull_refresh" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

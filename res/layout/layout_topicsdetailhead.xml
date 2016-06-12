@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/topic_detail_header" />
+    <LinearLayout android:orientation="horizontal" android:background="#ffd5d5d5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="16.0sp" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/et_header_message" android:background="@drawable/topic_detail_inputs" android:paddingLeft="10.0dip" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:hint="对这个兴趣你有什么想说" android:layout_weight="4.0" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/ll_header_send" android:background="@drawable/rb_report1_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发送" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

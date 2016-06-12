@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.npi.blureffect.TopCenterImageView android:id="@id/normal_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_default" />
+    <com.npi.blureffect.TopCenterImageView android:id="@id/blurred_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:alpha="0.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rela_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/text_title" android:background="@color/main_color" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="用户名、年龄" android:singleLine="true" android:layout_centerInParent="true" android:alpha="0.0" />
+            <ImageView android:id="@id/bt_back" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_button_back" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView android:id="@id/sl_fill" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/header_blank" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="@color/transparent_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/layout_photos" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/textView5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:text="相册" />
+                        <HorizontalScrollView android:id="@id/scroll_photos" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/container_photos" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                    <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.39999998dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip">
+                        <com.haomee.view.CircleImageView android:id="@id/tv_image" android:background="@drawable/sex_female" android:layout_width="85.0dip" android:layout_height="85.0dip" android:src="@drawable/item_icon" app:border_width="4.0dip" app:border_color="@color/transparent" />
+                        <ImageView android:id="@id/user_level_icon" android:layout_width="25.0dip" android:layout_height="20.0dip" android:layout_marginRight="4.0dip" android:layout_alignRight="@id/tv_image" android:layout_alignBottom="@id/tv_image" />
+                        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/tv_uname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="8.0dip" android:text=" " android:singleLine="true" android:layout_toRightOf="@id/tv_image" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/on_line_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:drawableLeft="@drawable/image_icon_online" android:drawablePadding="4.0dip" android:layout_toRightOf="@id/user_level_icon" android:layout_below="@id/tv_uname" android:layout_alignLeft="@id/tv_uname" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/tv_age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="" android:drawableLeft="@drawable/image_icon_birthday" android:drawablePadding="5.0dip" android:layout_below="@id/on_line_time" android:layout_alignLeft="@id/tv_uname" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/tv_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="" android:layout_toRightOf="@id/tv_age" android:layout_below="@id/on_line_time" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text=" " android:drawableLeft="@drawable/image_icon_position" android:drawablePadding="5.0dip" android:layout_below="@id/tv_age" android:layout_alignLeft="@id/tv_age" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/user_level" android:background="@drawable/iv_kuang" android:paddingLeft="8.0dip" android:paddingTop="5.0dip" android:paddingRight="8.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lv.0" android:layout_alignTop="@id/tv_uname" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.39999998dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:orientation="vertical" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+                        <ImageView android:gravity="center" android:id="@id/bt_attention" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_button_add_person" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/text_attention" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="28.0dip" android:text="添加关注" android:layout_alignBottom="@id/bt_attention" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:orientation="vertical" android:id="@id/layout_talk" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                        <ImageView android:gravity="center" android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_button_say" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="28.0dip" android:text="与Ta聊天" android:layout_alignBottom="@id/imageView1" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.39999998dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_signature" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dip">
+                    <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:text="个性宣言：" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/tv_signature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:text="" />
+                </LinearLayout>
+                <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.39999998dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_labels" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:text="标签：" />
+                    <HorizontalScrollView android:id="@id/scroll_labels" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/container_labels" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </HorizontalScrollView>
+                </LinearLayout>
+                <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.39999998dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_topics" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:text="兴趣" />
+                    <HorizontalScrollView android:id="@id/HorizontalScrollView01" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/container_topics" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

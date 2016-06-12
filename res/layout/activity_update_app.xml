@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/title" android:background="@color/activity_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/bt_back" android:padding="@dimen/top_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/land_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/class1" android:textColor="@color/main_color" android:ellipsize="end" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="版本信息" android:singleLine="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:src="@drawable/set_icon_versions" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@id/update_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="1.00" android:layout_below="@id/imageView1" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:src="@drawable/set_icon_versions_text" android:layout_below="@id/update_version" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_update_app" android:background="@drawable/preference_item_bg" android:padding="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+                <TextView android:textSize="@dimen/class2" android:textColor="#ff828282" android:id="@id/txt_update" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="检查更新" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tip_update" android:background="#ffff0000" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="new" android:layout_toRightOf="@id/txt_update" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/txt_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_start_page" android:background="@drawable/preference_item_bg" android:padding="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/class2" android:textColor="#ff828282" android:id="@id/txt_start" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="欢迎页" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:background="#ffff0000" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="new" android:layout_toRightOf="@id/txt_start" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/start_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

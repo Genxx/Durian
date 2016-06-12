@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/roundcorner_layout" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/ll_item_filter_chat" android:background="@drawable/rb_report1_selector" android:clickable="true" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="聊天" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:layout_above="@id/ll_item_filter_chat">
+        <ImageView android:id="@id/iv_item_filter_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_launcher" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_item_filter_bottom" android:background="#ff01a0e2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="right" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="你们" android:layout_weight="1.1" />
+            <TextView android:textSize="36.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_item_filter_count" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="18.0dip" android:text="15" android:layout_weight="1.0" />
+            <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="left" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="在这个兴趣下相遇" android:layout_weight="2.2" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_item_filter_name" android:background="#ffffb812" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:layout_above="@id/ll_item_filter_bottom">
+            <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_item_filter_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="无忧无虑的棉花糖" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/tv_item_filter_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="lv.2" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/tv_item_filter_onlinestate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="在线" android:drawableLeft="@drawable/image_icon_online" android:drawablePadding="3.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_item_filter_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_item_filter_loding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading_icon_wind_red" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

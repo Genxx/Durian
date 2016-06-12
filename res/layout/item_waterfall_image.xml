@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/item_body" android:background="@drawable/discover_card_bg" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/item_pic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/item_default" android:scaleType="fitXY" />
+        <View android:background="@drawable/discover_card__img_top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon_topic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/discover_icon_content" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffb6b6b6" android:id="@id/item_count_topic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="8.0dip" android:text="0" android:singleLine="true" android:layout_toRightOf="@id/icon_topic" />
+        <ImageView android:id="@id/icon_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/discover_icon_person" android:layout_toRightOf="@id/item_count_topic" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffb6b6b6" android:id="@id/item_count_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="8.0dip" android:text="0" android:singleLine="true" android:layout_toRightOf="@id/icon_user" />
+        <View android:id="@id/line_split" android:background="#ffd5d5d5" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/icon_topic" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_title" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/line_split">
+            <com.haomee.view.CircleImageView android:id="@id/item_icon" android:background="@drawable/sex_female" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/item_icon" app:border_width="1.0dip" app:border_color="@color/transparent" />
+            <TextView android:textSize="@dimen/class3" android:textColor="#ff969696" android:layout_gravity="center_vertical" android:id="@id/item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="" android:maxLines="2" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

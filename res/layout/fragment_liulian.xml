@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/bt_notice" android:background="@null" android:padding="12.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/call_button_information" />
+        <TextView android:textSize="@dimen/class1" android:textColor="@color/main_color" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="榴莲" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#ffd5d5d5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_menus" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_fav" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_fav" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/durian_button_collect_pressed" />
+            <TextView android:textSize="@dimen/class3" android:textColor="@color/main_color" android:id="@id/text_fav" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="收藏" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_history" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/durian_button_history_default" />
+            <TextView android:textSize="@dimen/class3" android:textColor="#ff969696" android:id="@id/text_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="历史" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_praise" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_praise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/durian_button_like_default" />
+            <TextView android:textSize="@dimen/class3" android:textColor="#ff969696" android:id="@id/text_praise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="点赞" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffd5d5d5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/layout_blank_tip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/fragment_container_liulian" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

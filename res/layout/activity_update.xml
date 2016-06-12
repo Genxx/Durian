@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_update_page" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="#fffe7777" android:gravity="center" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="版本更新" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:background="@color/main_color" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/frame_info" android:paddingLeft="16.0dip" android:paddingTop="6.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0sp" android:textColor="#ff363636" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="新版本特征：" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/txt_newFeature" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="1.全新UI设计，页面更简洁舒服\n2.增加存储位置的设置，再也不怕空间不足啦\n3.增加全屏播放模式，不用忍受讨厌的黑边啦\n5.增加分享功能，好看的动漫快告诉小伙伴一起来看吧\n" android:layout_weight="1.0" android:lineSpacingMultiplier="1.2" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ff363636" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="版本号：" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/txt_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="android 1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ff363636" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="大小：" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:id="@id/txt_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.2MB" />
+            </LinearLayout>
+            <CheckBox android:textColor="#ffc8c8c8" android:id="@id/box_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="下个版本再提示我吧" style="@style/CheckboxTheme" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/frame_update" android:paddingTop="80.0dip" android:paddingBottom="60.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/main_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在下载中。。。" />
+            <ProgressBar android:id="@id/pb_update" android:layout_width="150.0dip" android:layout_height="wrap_content" android:max="100" android:progress="0" style="?android:attr/progressBarStyleHorizontal" />
+        </LinearLayout>
+    </FrameLayout>
+    <View android:id="@id/view_line" android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_bt" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="18.0sp" android:textColor="#ff666666" android:id="@id/bt_close" android:background="#ffffffff" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="下次再说" android:layout_weight="1.0" />
+        <View android:background="#ffc0c0c0" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <Button android:textSize="18.0sp" android:textColor="@color/main_color" android:id="@id/bt_update" android:background="#ffffffff" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="现在更新" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

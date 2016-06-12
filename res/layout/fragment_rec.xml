@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.haomee.view.PullToRefreshScrollView android:orientation="vertical" android:id="@id/pullRefreshScrollView" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:listViewAttr="http://schemas.android.com/apk/res/com.haomee.liulian">
+    <com.haomee.view.WaterFallScrollView android:id="@id/waterfall_rec" android:background="#fff3eded" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="2.0dip">
+                <ImageView android:id="@id/header_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/item_default" android:scaleType="fitXY" />
+                <ImageView android:id="@id/icon_float" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-40.0dip" android:src="@drawable/discover_icon_00" android:scaleType="matrix" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/anim_drag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:src="@anim/discover_drag" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include layout="@layout/refresh_footer_loading" />
+        </LinearLayout>
+    </com.haomee.view.WaterFallScrollView>
+</com.haomee.view.PullToRefreshScrollView>

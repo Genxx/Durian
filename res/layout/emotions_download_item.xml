@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <ImageView android:id="@id/iv_emotions_cover" android:background="@null" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/item_default" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/is_new_emotions" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/face_icon_new" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <View android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_weight="1.0" />
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/fram_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_alignParentRight="true" android:layout_centerHorizontal="true">
+            <ProgressBar android:layout_gravity="center" android:id="@id/pb_emotions_progress" android:paddingRight="13.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_marginTop="10.0dip" android:max="100" android:progressDrawable="@drawable/progress_bar_download" style="?android:attr/progressBarStyleHorizontal" />
+            <TextView android:textSize="14.0sp" android:textColor="#7f000000" android:id="@id/tv_emotions_load" android:background="@drawable/tv_loading_kuang" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下载" />
+            <ImageView android:id="@id/iv_emotions_load" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/face_button_download" />
+        </FrameLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#ff545454" android:id="@id/tv_emotions_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="name" android:layout_toRightOf="@id/iv_emotions_cover" android:layout_alignTop="@id/iv_emotions_cover" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff929292" android:ellipsize="end" android:id="@id/tv_emotions_context" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:text="描述" android:singleLine="true" android:layout_toLeftOf="@id/fram_content" android:layout_toRightOf="@id/iv_emotions_cover" android:layout_below="@id/tv_emotions_name" />
+    </RelativeLayout>
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

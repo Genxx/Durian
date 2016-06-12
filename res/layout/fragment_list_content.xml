@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@color/activity_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/bt_back" android:padding="@dimen/top_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/land_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/class1" android:textColor="@color/main_color" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置" android:singleLine="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/pull_refresh_list" android:background="@null" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/hide_item_yellow_bg" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:smoothScrollbar="true" />
+    <include layout="@layout/layout_blank_tip" />
+</LinearLayout>

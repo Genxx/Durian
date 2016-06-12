@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fcf="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/radar_bg" android:scaleType="fitXY" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_title" android:background="#66000000" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <com.haomee.view.SlidingLayout android:id="@id/slidingLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.haomee.view.FancyCoverFlow android:id="@id/flow_types" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" fcf:unselectedAlpha="1.0" fcf:unselectedSaturation="1.0" fcf:unselectedScale="1.0" fcf:maxRotation="1" fcf:scaleDownGravity="1.0" />
+            </com.haomee.view.SlidingLayout>
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/radar_icon_choice" />
+        </LinearLayout>
+        <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_title">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/layout_radar" android:padding="0.0dip" android:layout_width="300.0dip" android:layout_height="300.0dip">
+                        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/radar_angle" />
+                        <ImageView android:id="@id/radar_chassis" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/radar_chassis" />
+                        <ImageView android:id="@id/radar_light" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/radar_light" />
+                        <FrameLayout android:id="@id/container_node" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                        <com.haomee.view.CircleImageView android:layout_gravity="center" android:id="@id/img_mine" android:layout_width="80.0dip" android:layout_height="80.0dip" fcf:border_width="1.0dip" fcf:border_color="@color/transparent" />
+                    </FrameLayout>
+                    <SeekBar android:gravity="center_vertical" android:id="@id/seekBar" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:progressDrawable="@drawable/seekbar_style_radar" android:minHeight="2.0dip" android:thumb="@drawable/radar_progress_slider" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/txt_distance_center" android:paddingTop="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <HorizontalScrollView android:id="@id/scrollView_person" android:background="@drawable/radar_background" android:paddingTop="20.0dip" android:paddingRight="0.0dip" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/layout_person" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_mask" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@id/layout_left" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/txt_distance_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/txt_num_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/txt_distance_left" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_right" android:background="#33000000" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/txt_distance_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/txt_num_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/txt_distance_right" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

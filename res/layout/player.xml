@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff333333" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/layout_player" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/frame_loading" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/img_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_waiting" android:layout_centerInParent="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_waiting_play" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_controllers" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/player_top" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/layout_scrolling_progress" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_scrolling_time" android:background="@color/player_mask_background" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="40.0sp" android:textColor="@color/player_txt_color" android:id="@id/scrolling_current_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+                    <TextView android:textSize="30.0sp" android:textColor="@color/player_txt_color" android:layout_gravity="center_horizontal" android:id="@id/scrolling_offset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[+00:00]" />
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/player_bottom" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/frame_process" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="30.0sp" android:textColor="@color/player_txt_color" android:id="@id/progress_light_volume" android:background="@color/player_mask_background" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="亮度：50%" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/frame_lock" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/bt_unlock" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_bt_lock" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>
